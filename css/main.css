@@ -189,6 +189,32 @@ body:before {
     line-height: 40px;
 }
 
+.weather a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 50%;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 800ms;
+    transition: -webkit-transform 800ms;
+    transition: transform 800ms, -webkit-transform 800ms;
+}
+
+.weather a:hover {
+    color: #666;
+    border: 1px solid #666;
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+    transform: rotate3d(0, 1, 0, 360deg);
+}
+
+.weather span {
+    font-size: 20px;
+    line-height: 40px;
+}
+
 @media (min-width: 360px) {
     .content {
         width: 360px;
